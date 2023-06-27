@@ -7,12 +7,12 @@ nextflow.enable.dsl=2
 params.enable_conda = false
 params.version = "v0.0.0-dev"
 
-include { fastpflash } from './workflows/fastpflash.nf'
+include { fastp_a_flash } from './workflows/fastpflash.nf'
 
-workflow NFCORE_TEST {
-    fastpflash ()
+workflow NF_test {
+    fastp_a_flash ()
 }
 
 workflow {
-    NFCORE_TEST ()
+    NF_test ()
 }

@@ -149,7 +149,7 @@ process flash {
 /*
 *  workflow
 */
-workflow fastpflash {
+workflow fastp_a_flash {
     INPUT_CHECK ()
     ch_raw_short_reads = INPUT_CHECK.out.raw_short_reads
 
