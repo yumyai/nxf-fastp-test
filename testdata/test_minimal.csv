@@ -1,0 +1,5 @@
+sample,group,fastq_1,fastq_2
+S01D00,0,testdata/S01D00_R1.fastq.gz,testdata/S01D00_R2.fastq.gz
+S01D35,0,testdata/S01D35_R1.fastq.gz,testdata/S01D35_R2.fastq.gz
+S02D00,0,testdata/S02D00_R1.fastq.gz,testdata/S02D00_R2.fastq.gz
+S02D35,0,testdata/S02D35_R1.fastq.gz,testdata/S02D35_R2.fastq.gz
