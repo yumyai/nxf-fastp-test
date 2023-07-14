@@ -82,7 +82,7 @@ include { INPUT_CHECK                                 } from '../subworkflows/lo
 */
 process fastp {
 
-  conda "${projectDir}/envs/minflow.yaml"
+  conda "${projectDir}/envs/nxf-test.yaml"
   container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
       'quay.io/biocontainers/fastp:0.23.2--h5f740d0_3' :
       'quay.io/biocontainers/fastp:0.23.2--h5f740d0_3' }"
@@ -123,7 +123,7 @@ process flash {
 
   publishDir "${params.outputdir}/flash", mode: 'link'
 
-  conda "${projectDir}/envs/minflow.yaml"
+  conda "${projectDir}/envs/nxf-test.yaml"
   container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
       'quay.io/biocontainers/flash:1.2.11--hed695b0_5' :
       'quay.io/biocontainers/flash:1.2.11--hed695b0_5' }"
